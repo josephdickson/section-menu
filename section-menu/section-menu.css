@@ -1,0 +1,109 @@
+.accordion-menu section div ul.menu {
+	display:none;
+	}
+	
+.accordion-menu section.active div ul.menu {
+	display:block;
+	}
+
+/* accordion class override forces open on all pages and posts with a accordion-menu active class tags manually placed in template  */
+.accordion-menu.active section div ul.menu {
+	display:block;
+	}
+
+/* CSS overrides to counter default styles by Foundation 4 */
+#section-menu.section-container * {
+	margin:0;
+	padding:0;
+	text-indent: 0em;
+	background-color: #fff;
+	border: none;
+	}
+	
+ #section-menu.section-container{
+	 border: none;
+	}
+	
+.menu.accordion-menu #section-menu.section-container p.title {
+	font-size:1rem;
+	font-weight: bold;
+	}
+
+	
+/* Customization */
+#section-menu.section-container p.title {
+	font-size:1rem;
+	font-weight: bold;
+	}
+
+
+#section-menu.section-container section p.title::after {
+	content: "+";
+	float:right;
+	margin-left:-1em;
+	}
+
+#section-menu.section-container section.active p.title::after{
+	content: "-";
+	}
+
+#section-menu li.menu-item {
+	display: block;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	}
+
+#section-menu li a {
+	display: block;
+	line-height:1rem;
+	}
+
+
+#section-menu.section-container section.active li {}
+
+#section-menu li.current-menu-item.active a {
+	color: #f7941d;
+	font-weight: normal;
+	text-shadow: none;
+	}
+
+/* Adjust margins for sub-menus */
+#section-menu ul.sub-menu {
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+	border-left: 1px solid #f2f2f2;
+}
+
+#section-menu ul.sub-menu a {
+	color: #5290A0 !important;
+}
+
+#section-menu ul.sub-menu a:hover {
+	color: #f7941d !important;
+}
+
+#section-menu ul.sub-menu li.current_page_item a {
+	color: #f7941d !important;
+}
+
+#section-menu ul.sub-menu ul.sub-menu li a {
+	color: #5290A0 !important;
+}
+
+#section-menu ul.sub-menu ul.sub-menu li.current_page_item a {
+	color: #f7941d !important;
+}
+
+#section-menu ul.sub-menu li a:hover {
+	color: #f7941d !important;
+}
+
+
+#section-menu .menu.accordion-menu .sub-menu li.menu-item {
+	margin-left: -1em !important;
+	padding-left: 1.5em !important;
+	padding-top:1.5em !important;
+	}
+
+#section-menu.section-container section.active li.current-menu-item.active a {}
+
